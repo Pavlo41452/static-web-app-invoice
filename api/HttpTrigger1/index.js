@@ -1,8 +1,8 @@
 module.exports = async function (context, req) {
     context.log('JavaScript HTTP trigger function processed a request.');
 
-    const name = "Pavlo";
+    const configValue = process.env.TEST;
     context.res = {
-        body: name
+        body: configValue
     };
 }
