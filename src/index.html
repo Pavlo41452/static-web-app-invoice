@@ -16,7 +16,7 @@
 
     <script>
       (async function() {
-          const response = await fetch(`/api/TestAzurFunction`);
+          const response = await fetch(`/api/HttpTrigger1`);
           const text = await response.text();
           document.querySelector('#name').textContent = text;
       }());
